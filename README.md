@@ -1,3 +1,16 @@
+---
+title: Pyxon Document Parser
+emoji: 📄
+colorFrom: blue
+colorTo: green
+sdk: gradio
+sdk_version: 6.17.3
+python_version: "3.11"
+app_file: app.py
+pinned: false
+short_description: Arabic-aware document parser with adaptive chunking and RAG
+---
+
 # Pyxon AI — Arabic-aware Document Parser for RAG
 
 My solution to the [Pyxon AI junior engineer entry task](TASK.md): a document parser that reads **PDF, DOCX, DOC and TXT**, works out the document's structure, **chooses fixed or dynamic chunking on its own**, and stores the results in a **vector DB (Chroma)** and a **SQL DB (SQLite)**. It also adds a knowledge graph, a RAPTOR summary tree, hybrid retrieval and a RAG layer. Arabic is fully supported, including **harakat/tashkeel**. Diacritics are kept exactly as written in storage, and matching ignores them.
